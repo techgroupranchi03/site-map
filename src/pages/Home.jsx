@@ -5,6 +5,7 @@ import { Helmet } from 'react-helmet-async';
 const Home = () => {
     return (
         <> 
+            {/* Helmet for managing document head */}
             <Helmet>
                 <title>Home Page</title>
                 <meta name="description" content="Welcome to the Home Page" />
