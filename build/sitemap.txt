@@ -1,3 +1,0 @@
-https://react-seo-poc.netlify.app/
-https://react-seo-poc.netlify.app/about
-https://react-seo-poc.netlify.app/disclaimer
