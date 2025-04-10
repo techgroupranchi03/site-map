@@ -38,6 +38,7 @@ const { SitemapStream, streamToPromise } = require('sitemap');
 const { createWriteStream } = require('fs');
 const { Readable } = require('stream');
 
+// Define your pages
 const staticPages = [
   { url: '/', changefreq: 'daily', priority: 1.0 },
   { url: '/about', changefreq: 'monthly', priority: 0.8 },
@@ -52,8 +53,7 @@ async function generateSitemap() {
   const sitemap = new SitemapStream({ hostname: 'https://react-seo-poc.netlify.app' });
   const writeStream = createWriteStream('./public/sitemap.xml', { encoding: 'utf-8' });
 
-  // Write the XML header manually to ensure proper encoding
-  writeStream.write('<?xml version="1.0" encoding="UTF-8"?>\n');
+  // Pipe the pages directly to the sitemap stream without manual header
   const pagesStream = Readable.from(pages);
   pagesStream.pipe(sitemap).pipe(writeStream);
 
