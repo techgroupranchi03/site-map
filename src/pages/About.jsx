@@ -6,7 +6,7 @@ const About = () => {
     return (
         <>
             <Helmet>
-                <title>About Us</title>
+                <title> the About Us</title>
                 <meta name="description" content="Learn more about us on this page." />
                 <link rel="canonical" href="/about" />
             </Helmet>
