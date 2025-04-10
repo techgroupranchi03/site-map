@@ -12,7 +12,7 @@ const About = () => {
             </Helmet>
             <div style={{ textAlign: 'center', padding: '20px' }}>
                 <h1>About Us</h1>
-                <p>Welcome to our application! We aim to provide the best services to our users.</p>
+                <p> The Welcome to our application! We aim to provide the best services to our users.</p>
                 <p>Our team is dedicated to delivering high-quality solutions tailored to your needs.</p>
             </div>
         </>
